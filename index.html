@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Уютная гостиница для котов и кошек</title>
+    <title>Главная страница сайта гостиницы для котов и кошек «Котейка»</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="#"><img src="img/logo.svg" width="50" height="50" alt="Логотип"></a>
+            <a href="#"><img src="img/logo.svg" width="50" height="50"
+                    alt="Логотип сайта гостиницы для котов и кошек «Котейка»"></a>
             <ul>
                 <li><a href="#">Почему мы?</a></li>
                 <li><a href="#">Номера</a></li>
@@ -21,10 +22,12 @@
     </header>
     <main>
         <section class="first-screen">
-            <h1><span>Котейка </span>Уютная гостиница для котов и кошек</h1>
-            <img src="img/photo-promo-1.jpg" alt="">
+            <h1>Гостиница для котов и кошек «Котейка»</h1>
+            <h2>Котейка</h2>
             <p>Санкт-Петербург</p>
-            <a href="#">Забронировать</a>
+            <p>Уютная гостиница для котов и кошек</p>
+            <a href="catalog.html">Забронировать</a>
+            <img src="img/photo-promo-1.jpg" width="1366" height="504" alt="Уютная гостиница для котов и кошек">
         </section>
         <section>
             <h2>Почему мы?</h2>
@@ -61,35 +64,48 @@
         </section>
         <section>
             <h2>Номера</h2>
-            <dl>
-                <dt>Эконом плюс</dt>
-                <dd>Площадь - 0,90 м2</dd>
-                <dd>Размеры (ШхГхВ) — 90х100х180 см</dd>
-                <dd>Цена за сутки: 200₽</dd>
-            </dl>
-            <img src="img/photo-order-1.jpg" width="600" height="404" alt="Эконом плюс">
+            <section>
+                <h3>Эконом плюс</h3>
+                <dl>
+                    <dt>Площадь - </dt>
+                    <dd>0,90 м<sup>2</sup></dd>
 
-            <form action="">
+                    <dt>Размеры (ШхГхВ) — </dt>
+                    <dd>90х100х180 см</dd>
+
+                    <dt>Цена за сутки: </dt>
+                    <dd>200₽</dd>
+                </dl>
+                <img src="img/photo-order-1.jpg" width="600" height="404" alt="Эконом плюс">
+            </section>
+            <section>
                 <h3>Забронировать номер</h3>
-                <label for="your-name">Ваше имя</label>
-                <input type="text" name="your-name" placeholder="Ваше имя">
+                <form id="reservation-form" action="#" method="post">
+                    <label class="visually-hidden" for="your-name">Ваше имя</label>
+                    <input type="text" name="reservation-form__your-name" id="reservation-form__your-name"
+                        placeholder="Ваше имя">
 
-                <label for="pets-name">Имя Питомца</label>
-                <input type="text" name="pets-name" placeholder="Имя Питомца">
+                    <label class="visually-hidden" for="reservation-form__pets-name">Имя Питомца</label>
+                    <input type="text" name="reservation-form__pets-name" id="reservation-form__pets-name"
+                        placeholder="Имя Питомца">
 
-                <label for="tel">Телефон</label>
-                <input type="tel" name="tel" placeholder="Телефон">
+                    <label class="visually-hidden" for="reservation-form__tel">Телефон</label>
+                    <input type="tel" name="reservation-form__tel" id="reservation-form__tel" placeholder="Телефон">
 
-                <label for="mail">E-mail</label>
-                <input type="email" name="mail" placeholder="E-mail">
+                    <label class="visually-hidden" for="reservation-form__mail">E-mail</label>
+                    <input type="email" name="reservation-form__mail" id="reservation-form__mail" placeholder="E-mail">
 
-                <label>Дата заезда с
-                    <input type="date" value="2020-01-26"> по
-                    <input type="date" value="2020-02-26">
-                </label>
+                    <p><label for="reservation-form-begin-date">Дата заезда с</label>
+                        <input type="text" name="reservation-form-begin-date" id="reservation-form-begin-date"
+                            placeholder="26.01.2020">
+                        <label for="reservation-form-end-date">по</label>
+                        <input type="text" name="reservation-form-end-date" id="reservation-form-end-date"
+                            placeholder="26.02.2020">
+                    </p>
 
-                <button>Отправить заявку</button>
-            </form>
+                    <button>Отправить заявку</button>
+                </form>
+            </section>
         </section>
         <section>
             <h2>Отзывы</h2>
@@ -100,7 +116,7 @@
                             каждый день высылала нам фото нашего питомца, рассказывала, как он себя чувствует. И мы и
                             котик остались очень довольны!</p>
                         <cite>Валерия Гришаева</cite>
-                        <p>15 ноября, 2019</p>
+                        <time datetime="2019-11-15">15 ноября, 2019</time>
                     </blockquote>
                 </li>
                 <li>
@@ -109,7 +125,7 @@
                             уезжают. В “Котейке” очень хорошо заботятся о питомцах, в гостинице очень чисто. Всем
                             рекомендую! Будем обращаться еще.</p>
                         <cite>Екатерина Минаева</cite>
-                        <p>10 октября, 2019</p>
+                        <time datetime="2019-10-10">10 октября, 2019</time>
                     </blockquote>
                 </li>
                 <li>
@@ -118,7 +134,7 @@
                             ним, и “Котейка” отлично справились. Я часто наблюдал по видео за питомцем со своего
                             телефона, это очень удобно.</p>
                         <cite>Павел Нечаев</cite>
-                        <p>2 августа, 2019</p>
+                        <time datetime="2019-08-02">2 августа, 2019</time>
                     </blockquote>
                 </li>
             </ul>
@@ -150,11 +166,13 @@
                         <li><a href="#">VK</a></li>
                     </ul>
                 </dd>
-                <img src="img/map.jpg" width="798" height="580" alt="Карта">
+                
             </dl>
+            <img src="img/map.jpg" width="798" height="580" alt="Карта">
         </section>
 
         <section>
+            <h2 class="visually-hidden">Дополнительная навигация по сайту</h2>
             <a href="#"><img src="img/logo.svg" width="50" height="50" alt="Логотип"></a>
             <ul>
                 <li><a href="#">Почему мы?</a></li>
@@ -162,11 +180,8 @@
                 <li><a href="#">Отзывы</a></li>
                 <li><a href="#">Как нас найти</a></li>
             </ul>
-        </section>
-
-        <section>
             <p>© 2019 Все права защищены</p>
-            <p>Политика конфиденциальности</p>
+            <a href="#">Политика конфиденциальности</a>
         </section>
     </footer>
 </body>
