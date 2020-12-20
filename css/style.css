@@ -1,0 +1,19 @@
+nav {
+  display: block;
+}
+
+.body__img {
+  display: none;
+}
+
+.kebab-train__link {
+  display: none;
+}
+
+.kebab-train__item {
+  background-color: #fff;
+}
+
+.kebab-train__item--active {
+  background-color: aliceblue;
+}

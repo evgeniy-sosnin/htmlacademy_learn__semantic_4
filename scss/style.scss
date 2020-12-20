@@ -1,0 +1,24 @@
+@import "_header";
+
+
+.body__img {
+	display: none;
+
+}
+
+.kebab-train {
+
+	// .kebab-train__item
+	&__link {
+		display: none;
+	}
+
+	&__item {
+		background-color: #fff;
+
+		// .kebab-train__item--active
+		&--active {
+			background-color: aliceblue;
+		}
+	}
+}
