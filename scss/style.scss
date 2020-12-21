@@ -2,23 +2,23 @@
 
 
 .body__img {
-	display: none;
+  display: none;
 
 }
 
 .kebab-train {
 
-	// .kebab-train__item
-	&__link {
-		display: none;
-	}
+  // .kebab-train__item
+  &__link {
+    display: none;
+  }
 
-	&__item {
-		background-color: #fff;
+  &__item {
+    background-color: #fff;
 
-		// .kebab-train__item--active
-		&--active {
-			background-color: aliceblue;
-		}
-	}
+    // .kebab-train__item--active
+    &--active {
+      background-color: aliceblue;
+    }
+  }
 }
