@@ -2,6 +2,10 @@ nav {
   display: block;
 }
 
+.visually-hidden {
+  display: none;
+}
+
 .body__img {
   display: none;
 }
